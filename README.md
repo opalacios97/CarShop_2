@@ -37,7 +37,7 @@ Puedes abrirla en tu navegador para visualizar, accede a [http://localhost:3000]
 La página se actualizará al realizar cambios.
 
 Despliega la aplicación de cliente en modo desarrollo.
-Puedes abrirla en tu navegador para visualizar, accede a [http://localhost:3000](http://localhost:3002).
+Puedes abrirla en tu navegador para visualizar, accede a [http://localhost:3002](http://localhost:3002).
 
 #### `node client.js`
 
