@@ -8,7 +8,7 @@ const path = require('path');
 
 //const db = require('./db');
 
-const ClientBookings = require('./controllers/client/bookings')
+const ClientOrdenes = require('./controllers/client/ordenes')
 
 app.use(bodyParser.json({ type: 'application/json' }))
 
@@ -36,8 +36,8 @@ app.use((request, response, next) => {
 app.use((request, response, next) => {
 
     const user = {
-        name: 'Leonardo',
-        last: 'Larrea'
+        name: 'Omar',
+        last: 'Palacios'
     }
     request.session.user = user;
     next();
@@ -52,6 +52,6 @@ app.use(express.static(path.join(__dirname, "build")));
 
 
 
-app.use('/', ClientBookings);
+app.use('/', ClientOrdenes);
 const PORT = 3002;
 app.listen(PORT, () => console.log(`Example app listening on port ${PORT}!`))

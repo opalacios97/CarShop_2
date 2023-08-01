@@ -8,7 +8,7 @@ const path = require('path');
 
 const db = require('./db');
 
-const AdminBookings = require('./controllers/admin/bookings')
+const AdminOrdenes = require('./controllers/admin/ordenes')
 const AdminUsers = require('./controllers/admin/users')
 
 app.use(bodyParser.json({ type: 'application/json' }))
@@ -24,7 +24,7 @@ app.set('views', __dirname + '/views');
 app.set('view engine', 'ejs');
 
 app.use('/users', AdminUsers)
-app.use('/', AdminBookings);
+app.use('/', AdminOrdenes);
 
 app.use(express.static(path.join(__dirname, "build")));
 
