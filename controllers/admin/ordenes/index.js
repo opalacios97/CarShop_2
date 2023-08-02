@@ -56,7 +56,7 @@ router.post('/ordenes', function (req, res){
     const body = req.body;
     console.log('Data:', body);
     
-    return Bookings.createOrden(body, (error, b) => {
+    return Ordenes.createOrden(body, (error, b) => {
         if(error){
             return  res.status(500).json({ code: 'UE', message: 'Unkwown error'})
         }
