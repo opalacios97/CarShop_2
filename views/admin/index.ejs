@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 <title>CarWash - Administrador</title>
-<meta name="author" content="Leonardo Larrea">
 <meta name="description" content="Ejemplo de Tabla">
 <meta name="viewport" content="width=device-width">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
@@ -55,7 +54,7 @@ body {
 }
 .table-title {        
 	padding-bottom: 15px;
-	background: #435d7d;
+	background: #43a7ae;
 	color: #fff;
 	padding: 16px 30px;
 	min-width: 100%;
@@ -140,6 +139,28 @@ table.table .avatar {
 	vertical-align: middle;
 	margin-right: 10px;
 }
+
+.fondo{
+	background-color: #43a7ae;
+}
+
+.cardlogin{
+	background-color: #6a878a;
+}
+
+.btn-success{
+	background-color: #999;
+}
+
+.btn-danger{
+	background-color: #999;
+}
+
+.btn{
+	background-color: #999;
+}
+
+
 .pagination {
 	float: right;
 	margin: 0 0 5px;
@@ -255,7 +276,7 @@ table.table .avatar {
 	resize: vertical;
 }
 .modal .btn {
-	border-radius: 2px;
+	border-radius: 15px;
 	min-width: 100px;
 }	
 .modal form label {
@@ -320,12 +341,20 @@ $(document).ready(function(){
 								<label for="selectAll"></label>
 							</span>
 						</th>
-                        <th data-field="id" data-editable="true" >Id</th>
-						<th data-field="first_name" data-editable="true" >First Name</th>
-						<th data-field="last_name" data-editable="true" >Last Name</th>
-						<th data-field="address" data-editable="true" >Address</th>
-						<th data-field="city" data-editable="true" >City</th>
-					    <th data-field="actions" >Actions</th>
+						<th data-field="first_name" data-editable="true" >Nombre</th>
+						<th data-field="last_name" data-editable="true" >Apellido</th>
+						<th data-field="address" data-editable="true" >Domicilio</th>
+						<th data-field="city" data-editable="true" >Ciudad</th>
+						<th data-field="identification_number" data-editable="true" >Identificación</th>
+						<th data-field="type_identification_number" data-editable="true" >Tipo identificación</th>
+						<th data-field="brand" data-editable="true" >Marca</th>
+						<th data-field="number_plate" data-editable="true" >Placa</th>
+						<th data-field="fuel_level" data-editable="true" >Nivel combustible</th>
+						<th data-field="services" data-editable="true" >Servicios</th>
+						<th data-field="time" data-editable="true" >Tiempo ejecución</th>
+						<th data-field="status" data-editable="true" >Status</th>
+						<th data-field="assingment_date" data-editable="true" >Fecha asiganada</th>
+						<th data-field="assingment_time" data-editable="true" >Hora asignada</th>
 					</tr>
 				</thead>
 				<tbody>
