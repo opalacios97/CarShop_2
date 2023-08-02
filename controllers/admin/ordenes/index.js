@@ -44,7 +44,7 @@ router.post('/login', (req, res) => {
 });
 
 router.get('/ordenes', (req, res) => {
-    return Ordenes.getOrdenes((error, elems)=> {
+    return Ordenes.getOrden((error, elems)=> {
         if (error) {
             return res.status(500).json({ code: 'UE', message: 'Unknown error'})
         }

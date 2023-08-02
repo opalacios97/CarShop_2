@@ -25,7 +25,7 @@ function createOrden(b, cb) {
 }
 
 function deleteOrden(id, cb) {
-    Bookings.findOneAndRemove({ _id: id})
+    Ordenes.findOneAndRemove({ _id: id})
     .then((elem) => {
         return cb(null, elem);
     })
